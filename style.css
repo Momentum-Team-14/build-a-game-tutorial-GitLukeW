@@ -1,0 +1,24 @@
+
+canvas { background: rgb(98, 96, 96); 
+    background-image: url(../build-a-game-tutorial-GitLukeW/Photos/background\ copy.jpeg);
+     display: block; 
+     margin: 0 auto;
+     background-position: center;
+     background-size: cover;
+     border: 2px solid red;
+    }
+     
+     
+
+     body {
+        background-color: antiquewhite;
+        border: 2px solid red;
+     }
+
+     header {
+        text-align: center;
+        margin-top: 10px;
+        border: 2px solid red;
+        font-size: 35px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     }
