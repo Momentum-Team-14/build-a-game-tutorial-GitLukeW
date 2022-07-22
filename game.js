@@ -1,8 +1,9 @@
 
- 
+ let mscott = document.querySelector('.mscott');  
  let canvas = document.getElementById("myCanvas");
  let ctx = canvas.getContext("2d");
- let ballRadius = 10;
+ let playagain = document.querySelector('.playagain');
+ let ballRadius = 15;
  
 
  //Defining the ball start with x and y
@@ -28,13 +29,14 @@
   //The scoring variable
   let score = 0;
   //Lives variable
-  let lives = 3;
+  let lives = 5;
 
   //Ball Image
   let images = {
   ball: new Image(),
   }
   images.ball.src = 'Photos/Untitled-1.png';
+
 
  //Drawing the ball
   function drawBall() {
@@ -111,8 +113,14 @@
       else { //lives counter
         lives--;
         if(!lives) {
-            alert("GAME OVER");
-            document.location.reload();
+            // alert("GAME OVER");
+            // document.location.reload();
+            mscott.style.display= 'flex'
+            images = {};
+            function reload() { //<--- //Play again button
+              document.location.reload();
+            }
+            playagain.addEventListener('click', reload)
         }
         else {
             x = canvas.width/2;
@@ -187,14 +195,14 @@
   function drawScore() {
     ctx.font = "20px Arial";
     ctx.fillStyle = "#000000";
-    ctx.fillText("Score: "+score, 8, 20);
+    ctx.fillText("Bears: "+score, 8, 20);
   } 
 
   // The liives counter
   function drawLives() {
     ctx.font = "20px Arial";
     ctx.fillStyle = "#000000";
-    ctx.fillText("Lives: "+lives, canvas.width-80, 20);
+    ctx.fillText("Beets: "+lives, canvas.width-80, 20);
   }
 
   // Mouse movments

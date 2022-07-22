@@ -23,8 +23,30 @@ canvas { background: rgb(98, 96, 96);
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
      }
 
-     .mscott {
+     .modal {
       border: 2px solid rgb(5, 202, 228);
+      /* background-color: red; */
+      height: 400px;
+      width: 400px;
      }
+
+     .mscottimg {
+      display: flex;
+      height: 100%;
+      width: 100%;
+     }
+
+     .mscott {
+      position: fixed;
+      top: 0;
+      /* background-color: aqua; */
+      display: none;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+     }
+
+     
 
 
