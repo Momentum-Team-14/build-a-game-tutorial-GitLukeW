@@ -5,29 +5,24 @@ canvas { background: rgb(98, 96, 96);
      margin: 0 auto;
      background-position: center;
      background-size: cover;
-     border: 2px solid rgb(2, 70, 21);
+     /* border: 2px solid rgb(2, 70, 21); */
     }
-     
-     
 
      body {
         background-color: antiquewhite;
-        border: 2px solid rgb(15, 8, 239);
+        /* border: 2px solid rgb(15, 8, 239); */
      }
 
      header {
         text-align: center;
         margin-top: 10px;
-        border: 2px solid red;
         font-size: 35px;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
      }
 
      .modal {
-      border: 2px solid rgb(5, 202, 228);
-      /* background-color: red; */
-      height: 400px;
-      width: 400px;
+      height: 550px;
+      width: 650px;
      }
 
      .mscottimg {
@@ -46,7 +41,3 @@ canvas { background: rgb(98, 96, 96);
       height: 100%;
       width: 100%;
      }
-
-     
-
-

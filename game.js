@@ -3,14 +3,14 @@
  let canvas = document.getElementById("myCanvas");
  let ctx = canvas.getContext("2d");
  let playagain = document.querySelector('.playagain');
- let ballRadius = 15;
+ let ballRadius = 14;
  
 
  //Defining the ball start with x and y
   let x = canvas.width/2;
   let y = canvas.height-30;
-  let dx = 2;
-  let dy = -2;
+  let dx = 3.2;
+  let dy = -2.8;
  // The paddle 
   let paddleHeight = 15;
   let paddleWidth = 80;
@@ -29,7 +29,7 @@
   //The scoring variable
   let score = 0;
   //Lives variable
-  let lives = 5;
+  let lives = 3;
 
   //Ball Image
   let images = {
@@ -125,8 +125,8 @@
         else {
             x = canvas.width/2;
             y = canvas.height-30;
-            dx = 2;
-            dy = -2;
+            dx = 4;
+            dy = -4;
             paddleX = (canvas.width-paddleWidth)/2;
         }
       }
