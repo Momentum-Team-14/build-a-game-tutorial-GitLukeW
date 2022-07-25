@@ -198,7 +198,7 @@
     ctx.fillText("Bears: "+score, 8, 20);
   } 
 
-  // The liives counter
+  // The lives counter
   function drawLives() {
     ctx.font = "20px Arial";
     ctx.fillStyle = "#000000";
@@ -212,6 +212,5 @@
         paddleX = relativeX - paddleWidth/2;
     }
   }
-
+  
   draw();
-
